@@ -16,7 +16,7 @@
            'pnp-templates': [],
            'web': []},
  'name': 'zte_if',
- 'title': 'Some ZTE devices do not respond to the standard snmp interface description (ifDescription) query with valid data, and returns an empty or null value. This plugin eliminates the problem by directing the query to a different OID, dedicated to ZTE interfaces.',
+ 'title': 'Correct snmp OID response: ifDescription for some ZTE devices.',
  'version': '2.0',
  'version.min_required': '2.0.0',
  'version.packaged': '2.0.0p18',
