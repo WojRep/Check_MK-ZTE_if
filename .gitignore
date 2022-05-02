@@ -4,7 +4,8 @@
 !/local
 !/local/**
 !/var
-!/var/**
+!/var/lib
+!/var/lib/**
 !.html
 !.html/**
 !*.md
