@@ -5,6 +5,7 @@
 !/var
 !/var/**
 !.html
+!.html/**
 !*.md
 !LICENSE
 !*.mkp
