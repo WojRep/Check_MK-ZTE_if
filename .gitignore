@@ -1,13 +1,12 @@
-*
+**
 !.gitignore
-!local
-
-!local/lib/check_mk/base/plugins/agent_based/*
+!/local
+!/local/**
+!/var
+!/var/**
 !.html
 !*.md
 !LICENSE
-!var
-!var/check_mk/packages
 !*.mkp
-!*.py
+
 
