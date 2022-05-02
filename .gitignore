@@ -1,0 +1,11 @@
+*
+!.gitignore
+!local
+!.html
+!*.md
+!LICENSE
+!var
+!var/check_mk/packages
+!*.mkp
+!*.py
+
