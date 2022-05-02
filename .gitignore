@@ -1,6 +1,8 @@
 *
 !.gitignore
 !local
+
+!local/lib/check_mk/base/plugins/agent_based/*
 !.html
 !*.md
 !LICENSE
