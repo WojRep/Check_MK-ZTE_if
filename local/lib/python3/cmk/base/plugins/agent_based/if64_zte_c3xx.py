@@ -12,6 +12,17 @@ from cmk.base.plugins.agent_based.agent_based_api.v1 import (
 )
 from cmk.base.plugins.agent_based.utils import if64, interfaces
 
+def _print_debug(print_data):
+    pprint('####################################################################')
+    pprint('####################################################################')
+    pprint(' ')
+    pprint(print_data)
+    pprint(' ')
+    pprint('####################################################################')
+    pprint('####################################################################')
+
+
+
 def parse_if64_zte_c3xx(string_table: List[type_defs.StringByteTable]):
     preprocessed_lines = []
     for line in string_table[0]:
@@ -19,7 +30,10 @@ def parse_if64_zte_c3xx(string_table: List[type_defs.StringByteTable]):
             line[18] = line[1]
         line = line[:20]
         preprocessed_lines.append(line[:3] + [str(int(line[3]))] + line[4:])
-    return if64.generic_parse_if64([preprocessed_lines])
+#    return if64.generic_parse_if64([preprocessed_lines])
+    return if64.generic_parse_if64(preprocessed_lines)
+
+
 register.snmp_section(
     name="if64_zte_c3xx",
     parse_function=parse_if64_zte_c3xx,
